@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface DistilleryRepository extends JpaRepository<Distillery, Long> {
-//    List<Distillery> findDistilleryInRegion(String region);
+    List<Distillery> findDistilleriesByRegion(String region);
 }
